@@ -45,5 +45,11 @@ Example placement of the component (after company infobar menu)
 
 Configuration
 ----
-No configuration is needed.
+You can configure dropdown menu for the snow control and the intensity of the snow by editing this file
+
+/intranet/snowflakes/html/SnowFlakes.html
+
+
+
+
 
