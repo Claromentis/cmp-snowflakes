@@ -7,7 +7,7 @@ class SnowFlakes extends \TemplaterComponentTmpl
 	public function Show($attributes)
 	{
 		/*template*/
-		$template = "snowflakes/UI/SnowFlakes.html";
+		$template = "snowflakes/SnowFlakes.html";
 		return $this->CallTemplater($template, $args);
 	}
 }
