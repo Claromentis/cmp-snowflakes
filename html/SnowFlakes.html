@@ -1,62 +1,62 @@
 <!-- snow falling code -->
  <script src='/intranet/snowflakes/js/snowfall.jquery.min.js'></script>
     <script type='text/javascript'>     
-        $(document).ready(function(){
-            $('.collectonme').hide();
+        jQuery(document).ready(function(){
+            jQuery('.collectonme').hide();
             //Start the snow default options you can also make it snow in certain elements, etc.
-            $(document).snowfall();
+            jQuery(document).snowfall();
             
-            $("#clear").click(function(){
-                $(document).snowfall('clear'); // How you clear
+            jQuery("#clear").click(function(){
+                jQuery(document).snowfall('clear'); // How you clear
             });
             
-            $("#round").click(function(){
+            jQuery("#round").click(function(){
                 document.body.className  = "darkBg";
-                $('.collectonme').hide();
-                $(document).snowfall('clear');
-                $(document).snowfall({round : true, minSize: 5, maxSize:8}); // add rounded
+                jQuery('.collectonme').hide();
+                jQuery(document).snowfall('clear');
+                jQuery(document).snowfall({round : true, minSize: 5, maxSize:8}); // add rounded
             });
             
-            $("#shadows").click(function(){
+            jQuery("#shadows").click(function(){
                 document.body.className  = "lightBg";
-                $('.collectonme').hide();
-                $(document).snowfall('clear');
-                $(document).snowfall({shadow : true, flakeCount:500}); // add shadows
+                jQuery('.collectonme').hide();
+                jQuery(document).snowfall('clear');
+                jQuery(document).snowfall({shadow : true, flakeCount:500}); // add shadows
             });
 
-            $("#roundshadows").click(function(){
+            jQuery("#roundshadows").click(function(){
                 document.body.className  = "lightBg";
-                $('.collectonme').hide();
-                $(document).snowfall('clear');
-                $(document).snowfall({shadow : true, round : true,  minSize: 5, maxSize:8}); // add shadows
+                jQuery('.collectonme').hide();
+                jQuery(document).snowfall('clear');
+                jQuery(document).snowfall({shadow : true, round : true,  minSize: 5, maxSize:8}); // add shadows
             });
             
-            $("#collection").click(function(){
-                $(document).snowfall('clear');
+            jQuery("#collection").click(function(){
+                jQuery(document).snowfall('clear');
                 document.body.className  = "darkBg";
-                $('.collectonme').show();
-                $(document).snowfall({collection : '.collectonme', flakeCount : 250});
+                jQuery('.collectonme').show();
+                jQuery(document).snowfall({collection : '.collectonme', flakeCount : 250});
             });
             
-            $("#imgbut").click(function(){
-                $('.collectonme').hide();
-                $(document).snowfall('clear');
+            jQuery("#imgbut").click(function(){
+                jQuery('.collectonme').hide();
+                jQuery(document).snowfall('clear');
                 document.body.className  = "darkBg";
-                $(document).snowfall({image :"/intranet/snowflakes/images/flake.png", minSize: 10, maxSize:32});
+                jQuery(document).snowfall({image :"/intranet/snowflakes/images/flake.png", minSize: 10, maxSize:32});
             });
 
-            $("#imgcat").click(function(){
-                $('.collectonme').hide();
-                $(document).snowfall('clear');
+            jQuery("#imgcat").click(function(){
+                jQuery('.collectonme').hide();
+                jQuery(document).snowfall('clear');
                 document.body.className  = "darkBg";
-                $(document).snowfall({image :"/intranet/snowflakes/images/cat.png", minSize: 15, maxSize:180});
+                jQuery(document).snowfall({image :"/intranet/snowflakes/images/cat.png", minSize: 15, maxSize:180});
             });
 
-            $("#deviceorientation").click(function(){
-                $(document).snowfall('clear');
-                $('.collectonme').hide();
+            jQuery("#deviceorientation").click(function(){
+                jQuery(document).snowfall('clear');
+                jQuery('.collectonme').hide();
                 document.body.className  = "darkBg";
-                $(document).snowfall({deviceorientation : true, round : true, minSize: 5, maxSize:8});
+                jQuery(document).snowfall({deviceorientation : true, round : true, minSize: 5, maxSize:8});
             });
 
         });
