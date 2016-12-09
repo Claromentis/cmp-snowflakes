@@ -52,6 +52,13 @@
                 jQuery(document).snowfall({image :"/intranet/snowflakes/images/cat.png", minSize: 15, maxSize:180});
             });
 
+            jQuery("#imgken").click(function(){
+                jQuery('.collectonme').hide();
+                jQuery(document).snowfall('clear');
+                document.body.className  = "darkBg";
+                jQuery(document).snowfall({image :"/intranet/snowflakes/images/ken.png", minSize: 15, maxSize:180});
+            });
+
             jQuery("#deviceorientation").click(function(){
                 jQuery(document).snowfall('clear');
                 jQuery('.collectonme').hide();
@@ -75,6 +82,7 @@
     	<li><a href="#" id="roundshadows"><i class="glyphicons glyphicons-brightness-increase"></i> Heavy</a></li>
     	<li><a href="#" id="imgbut"><i class="glyphicons glyphicons-snowflake"></i> Flakes</a></li>
     	<li><a href="#" id="imgcat"><i class="glyphicons glyphicons-dog"></i> Cats</a></li>
+        <li><a href="#" id="imgken"><i class="glyphicons glyphicons-user"></i> Ken</a></li>
     </ul>
 </li>
 <!-- Snow control -->
